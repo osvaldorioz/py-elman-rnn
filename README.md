@@ -3,13 +3,11 @@ El algoritmo **Elman RNN** es una red neuronal recurrente (RNN) simple propuesta
 ### **Estructura del Elman RNN**
 1. **Capa de entrada**: Recibe los datos de entrada \( x_t \).
 2. **Capa oculta**: Tiene conexiones recurrentes, lo que significa que el estado oculto \( h_t \) en el tiempo \( t \) se calcula usando tanto la entrada actual como el estado oculto anterior \( h_{t-1} \).
-   \[
-   h_t = \tanh(W_x x_t + W_h h_{t-1} + b_h)
-   \]
+   ![imagen](https://github.com/user-attachments/assets/36e4ff84-d1cd-4abf-97ac-c934cbbd11e3)
+
 3. **Capa de salida**: Convierte el estado oculto en una salida \( y_t \).
-   \[
-   y_t = W_y h_t + b_y
-   \]
+   ![imagen](https://github.com/user-attachments/assets/e4fc9f97-0879-4c6c-9b98-8cc230ae262a)
+
 
 ### **Características clave**
 - Usa una **memoria interna** en la capa oculta para modelar datos secuenciales.
